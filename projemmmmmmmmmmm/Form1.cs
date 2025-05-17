@@ -65,7 +65,7 @@ namespace projemmmmmmmmmmm {
 
                             reader.Close();
 
-                            kullanıcı anaEkran = new kullanıcı();
+                            islemmenusu anaEkran = new islemmenusu();
                             anaEkran.Show();
                             this.Hide();
                         }
@@ -92,9 +92,19 @@ namespace projemmmmmmmmmmm {
 
         private void button2_Click(object sender, EventArgs e)
         {
+            GlobalDatabase.Conn = conn;
             kayıt_ol kayıt_Ol = new kayıt_ol();
             kayıt_Ol.Show();
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string mesaj = "Telefon: 0 (212) 123 45 67\n" +
+                   "E-posta Adresimiz: destek@horozbilet.com\n" +
+                   "Çalışma Saatleri: 09:00 - 19:00\n"+
+                   "Instagram hesabımız: horozbilet";
+           MessageBox.Show(mesaj, "Bize Ulaşın", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -30,7 +30,7 @@ namespace projemmmmmmmmmmm
                 return;
             }
 
-            if (textBox3.Text != textBox5.Text)
+            if (textBox4.Text != textBox5.Text)
             {
                 MessageBox.Show("Şifreler uyuşmuyor.");
                 label8.Text = "şifreler uyuşmuyor";
@@ -47,8 +47,8 @@ namespace projemmmmmmmmmmm
                 cmd.Parameters.AddWithValue("@isim", textBox1.Text);
                 cmd.Parameters.AddWithValue("@soyad", textBox2.Text);
                 cmd.Parameters.AddWithValue("@telefon", maskedTextBox1.Text);
-                cmd.Parameters.AddWithValue("@sifre", textBox3.Text);
-                cmd.Parameters.AddWithValue("@user", textBox5.Text);
+                cmd.Parameters.AddWithValue("@sifre", textBox5.Text);
+                cmd.Parameters.AddWithValue("@user", textBox3.Text);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Kayıt başarılı!");
             }

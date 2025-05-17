@@ -156,11 +156,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BiletSatinAlma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiletSatinAlma.Designer.cs">
+      <DependentUpon>BiletSatinAlma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bilet_kes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bilet_kes.Designer.cs">
+      <DependentUpon>bilet_kes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FiyatListesiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiyatListesiForm.Designer.cs">
+      <DependentUpon>FiyatListesiForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="islemmenusu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="islemmenusu.Designer.cs">
+      <DependentUpon>islemmenusu.cs</DependentUpon>
     </Compile>
     <Compile Include="kayıt_ol.cs">
       <SubType>Form</SubType>
@@ -168,22 +192,52 @@
     <Compile Include="kayıt_ol.Designer.cs">
       <DependentUpon>kayıt_ol.cs</DependentUpon>
     </Compile>
+    <Compile Include="kredi_kartı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kredi_kartı.Designer.cs">
+      <DependentUpon>kredi_kartı.cs</DependentUpon>
+    </Compile>
     <Compile Include="kullanıcı.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="kullanıcı.Designer.cs">
       <DependentUpon>kullanıcı.cs</DependentUpon>
     </Compile>
+    <Compile Include="oturmaplanı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oturmaplanı.Designer.cs">
+      <DependentUpon>oturmaplanı.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BiletSatinAlma.resx">
+      <DependentUpon>BiletSatinAlma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bilet_kes.resx">
+      <DependentUpon>bilet_kes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiyatListesiForm.resx">
+      <DependentUpon>FiyatListesiForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="islemmenusu.resx">
+      <DependentUpon>islemmenusu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="kayıt_ol.resx">
       <DependentUpon>kayıt_ol.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="kredi_kartı.resx">
+      <DependentUpon>kredi_kartı.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="kullanıcı.resx">
       <DependentUpon>kullanıcı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oturmaplanı.resx">
+      <DependentUpon>oturmaplanı.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
