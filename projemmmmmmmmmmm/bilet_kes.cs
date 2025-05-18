@@ -17,13 +17,22 @@ namespace projemmmmmmmmmmm
         public bilet_kes()
         {
             InitializeComponent();
+            comboBox1.Text = "1";
+            if (kombine == 1)
+            {
+                comboBox1.Visible = true;
+                lbl_kombine.Visible = true;
+            }
         }
         public static int OdemeDurumu = 0;
+        public static int kombine = 0;
         public static string isim_table = "";
+        public static int bilet_fiyat = 0;
         private void button1_Click(object sender, EventArgs e)
         {
             kredi_kartı kart=new kredi_kartı();
             kart.Show();
+            
         }
       
         public string Label1Text
@@ -67,18 +76,48 @@ namespace projemmmmmmmmmmm
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            string[] fiyat=label2.Text.Split('-');
-            int cost_now = Convert.ToInt32(fiyat[0]);
             if (e.RowIndex < 0 || e.ColumnIndex < 0) return;
-            int cost = 100;
+
+            int cost = bilet_fiyat; 
+            int mac_sayisi = Convert.ToInt32(comboBox1.Text);
+
             var cell = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex];
+
             if (cell.Style.BackColor == Color.Green)
             {
-                cell.Style.BackColor = Color.Blue; // Seçildi
-                label2.Text = (cost + cost_now) + "-TL";
-                
+                // Koltuk seçildi
+                cell.Style.BackColor = Color.Blue;
             }
+            else if (cell.Style.BackColor == Color.Blue)
+            {
+                // Koltuk tekrar seçildiyse vazgeçildi
+                cell.Style.BackColor = Color.Green;
+            }
+
+            // Tüm seçilen koltukları say
+            int secili_koltuk_sayisi = 0;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                foreach (DataGridViewCell c in row.Cells)
+                {
+                    if (c.Style.BackColor == Color.Blue)
+                    {
+                        secili_koltuk_sayisi++;
+                    }
+                }
+            }
+
+            // Toplam ücret hesapla
+            double toplam = secili_koltuk_sayisi * cost * mac_sayisi;
+
+            if (mac_sayisi > 3)
+            {
+                toplam = toplam - (toplam * 0.10); // %10 indirim
+            }
+
+            label2.Text = toplam.ToString("0.00") + " -TL";
         }
+
 
         private void bilet_kes_Load(object sender, EventArgs e)
         {
@@ -134,6 +173,11 @@ namespace projemmmmmmmmmmm
         private void button2_Click(object sender, EventArgs e)
         {
             odeme();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

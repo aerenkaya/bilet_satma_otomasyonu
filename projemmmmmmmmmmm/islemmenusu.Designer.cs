@@ -34,11 +34,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -93,34 +90,14 @@
             this.ımageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI Variable Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(112, 278);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(257, 46);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Bilet Devret";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Segoe UI Variable Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.Location = new System.Drawing.Point(397, 280);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(257, 46);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Kalan Koltukları Göster";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("Segoe UI Variable Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button6.Location = new System.Drawing.Point(112, 347);
+            this.button6.Font = new System.Drawing.Font("Segoe UI Variable Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button6.Location = new System.Drawing.Point(112, 280);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(257, 46);
             this.button6.TabIndex = 8;
-            this.button6.Text = "Telefon No İşlemleri";
+            this.button6.Text = "Profil Ayarları";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -135,16 +112,6 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Segoe UI Variable Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button8.Location = new System.Drawing.Point(397, 347);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(257, 46);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "Şifre Değiştir";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
             // islemmenusu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -152,11 +119,8 @@
             this.BackgroundImage = global::projemmmmmmmmmmm.Properties.Resources.Siyah_ve_Beyaz__Profesyonel_ve_Havalı__Sanatsal_Masaüstü_Duvar_Kağıdı__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -175,10 +139,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ImageList ımageList1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
     }
 }

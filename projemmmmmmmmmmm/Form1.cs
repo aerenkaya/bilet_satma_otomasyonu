@@ -30,13 +30,54 @@ namespace projemmmmmmmmmmm {
             public static string Isim { get; set; }
             public static string Soyisim { get; set; }
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
                 if (rd_yonetici.Checked)
                 {
+                    string kullaniciAdi = textBox1.Text;
+                    string sifre = textBox2.Text;
+                    GlobalDatabase.Conn = conn;
+                    try
+                    {
+                        GlobalDatabase.Conn.Open();
 
+                        string query = "SELECT * FROM yonetici WHERE kullanıcı_adi = @kadi AND sifre = @sifre";
+                        MySqlCommand cmd = new MySqlCommand(query, GlobalDatabase.Conn);
+                        cmd.Parameters.AddWithValue("@kadi", kullaniciAdi);
+                        cmd.Parameters.AddWithValue("@sifre", sifre);
+
+                        MySqlDataReader reader = cmd.ExecuteReader();
+
+                        if (reader.Read())
+                        {
+                            // Kullanıcı bulundu, bilgileri static sınıfa kaydet
+                            GlobalDatabase.KullaniciID = reader.GetInt32("id");
+                            GlobalDatabase.KullaniciAdi = reader.GetString("kullanıcı_adi");
+                            GlobalDatabase.Isim = reader.GetString("isim");
+                            GlobalDatabase.Soyisim = reader.GetString("soy_isim");
+
+                            reader.Close();
+
+                          yonetici_islemler yonetici=new yonetici_islemler();
+                            yonetici.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Kullanıcı adı veya şifre yanlış.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Hata: " + ex.Message);
+                    }
+                    finally
+                    {
+                        GlobalDatabase.Conn.Close();
+                    }
                 }
                 else if (rd_user.Checked)
                 {

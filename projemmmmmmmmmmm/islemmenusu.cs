@@ -29,7 +29,8 @@ namespace projemmmmmmmmmmm
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            profil profil = new profil();
+            profil.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -53,6 +54,7 @@ namespace projemmmmmmmmmmm
         private void button2_Click(object sender, EventArgs e)
         {
             BiletSatinAlma kombineal = new BiletSatinAlma();
+            bilet_kes.kombine = 1;
             kombineal.Show();
         }
     }

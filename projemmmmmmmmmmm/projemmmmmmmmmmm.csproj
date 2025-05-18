@@ -174,6 +174,12 @@
     <Compile Include="FiyatListesiForm.Designer.cs">
       <DependentUpon>FiyatListesiForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="fiyat_belirleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fiyat_belirleme.Designer.cs">
+      <DependentUpon>fiyat_belirleme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,12 @@
     </Compile>
     <Compile Include="islemmenusu.Designer.cs">
       <DependentUpon>islemmenusu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kalan_koltuklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kalan_koltuklar.Designer.cs">
+      <DependentUpon>kalan_koltuklar.cs</DependentUpon>
     </Compile>
     <Compile Include="kayıt_ol.cs">
       <SubType>Form</SubType>
@@ -198,20 +210,26 @@
     <Compile Include="kredi_kartı.Designer.cs">
       <DependentUpon>kredi_kartı.cs</DependentUpon>
     </Compile>
-    <Compile Include="kullanıcı.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="kullanıcı.Designer.cs">
-      <DependentUpon>kullanıcı.cs</DependentUpon>
-    </Compile>
     <Compile Include="oturmaplanı.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="oturmaplanı.Designer.cs">
       <DependentUpon>oturmaplanı.cs</DependentUpon>
     </Compile>
+    <Compile Include="profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profil.Designer.cs">
+      <DependentUpon>profil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="yonetici_islemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yonetici_islemler.Designer.cs">
+      <DependentUpon>yonetici_islemler.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BiletSatinAlma.resx">
       <DependentUpon>BiletSatinAlma.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FiyatListesiForm.resx">
       <DependentUpon>FiyatListesiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fiyat_belirleme.resx">
+      <DependentUpon>fiyat_belirleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -233,11 +254,11 @@
     <EmbeddedResource Include="kredi_kartı.resx">
       <DependentUpon>kredi_kartı.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="kullanıcı.resx">
-      <DependentUpon>kullanıcı.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="oturmaplanı.resx">
       <DependentUpon>oturmaplanı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profil.resx">
+      <DependentUpon>profil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -249,6 +270,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="yonetici_islemler.resx">
+      <DependentUpon>yonetici_islemler.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
