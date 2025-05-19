@@ -57,5 +57,10 @@ namespace projemmmmmmmmmmm
             bilet_kes.kombine = 1;
             kombineal.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

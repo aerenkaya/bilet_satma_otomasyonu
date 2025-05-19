@@ -44,7 +44,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Variable Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(274, 72);
+            this.label1.Location = new System.Drawing.Point(286, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 40);
             this.label1.TabIndex = 0;
@@ -53,8 +53,8 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Variable Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(112, 139);
+            this.button1.Font = new System.Drawing.Font("Segoe UI Variable Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(271, 92);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(257, 46);
             this.button1.TabIndex = 3;
@@ -64,8 +64,8 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI Variable Text", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(397, 139);
+            this.button2.Font = new System.Drawing.Font("Segoe UI Variable Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.Location = new System.Drawing.Point(271, 158);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(257, 46);
             this.button2.TabIndex = 4;
@@ -75,8 +75,8 @@
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI Variable Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(112, 205);
+            this.button3.Font = new System.Drawing.Font("Segoe UI Variable Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button3.Location = new System.Drawing.Point(271, 224);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(257, 46);
             this.button3.TabIndex = 5;
@@ -92,8 +92,8 @@
             // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("Segoe UI Variable Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button6.Location = new System.Drawing.Point(112, 280);
+            this.button6.Font = new System.Drawing.Font("Segoe UI Variable Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button6.Location = new System.Drawing.Point(271, 287);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(257, 46);
             this.button6.TabIndex = 8;
@@ -103,12 +103,12 @@
             // 
             // button7
             // 
-            this.button7.Font = new System.Drawing.Font("Segoe UI Variable Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button7.Location = new System.Drawing.Point(397, 207);
+            this.button7.Font = new System.Drawing.Font("Segoe UI Variable Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button7.Location = new System.Drawing.Point(271, 352);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(257, 46);
             this.button7.TabIndex = 9;
-            this.button7.Text = "Stadyum Oturma Planı";
+            this.button7.Text = "Stad Oturma Planı";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 

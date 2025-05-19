@@ -186,17 +186,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hasilat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hasilat.Designer.cs">
+      <DependentUpon>Hasilat.cs</DependentUpon>
+    </Compile>
     <Compile Include="islemmenusu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="islemmenusu.Designer.cs">
       <DependentUpon>islemmenusu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="kalan_koltuklar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="kalan_koltuklar.Designer.cs">
-      <DependentUpon>kalan_koltuklar.cs</DependentUpon>
     </Compile>
     <Compile Include="kayıt_ol.cs">
       <SubType>Form</SubType>
@@ -224,6 +224,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SatılanBilet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatılanBilet.Designer.cs">
+      <DependentUpon>SatılanBilet.cs</DependentUpon>
+    </Compile>
     <Compile Include="yonetici_islemler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hasilat.resx">
+      <DependentUpon>Hasilat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="islemmenusu.resx">
       <DependentUpon>islemmenusu.cs</DependentUpon>
@@ -270,6 +279,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SatılanBilet.resx">
+      <DependentUpon>SatılanBilet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="yonetici_islemler.resx">
       <DependentUpon>yonetici_islemler.cs</DependentUpon>
     </EmbeddedResource>

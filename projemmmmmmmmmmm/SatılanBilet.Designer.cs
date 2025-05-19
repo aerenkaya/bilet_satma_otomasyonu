@@ -1,6 +1,6 @@
 ﻿namespace projemmmmmmmmmmm
 {
-    partial class kalan_koltuklar
+    partial class SatılanBilet
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // SatılanBilet
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::projemmmmmmmmmmm.Properties.Resources.Siyah_ve_Beyaz__Profesyonel_ve_Havalı__Sanatsal_Masaüstü_Duvar_Kağıdı__2_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "kalan_koltuklar";
+            this.Name = "SatılanBilet";
+            this.Text = "SatılanBilet";
+            this.Load += new System.EventHandler(this.SatılanBilet_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

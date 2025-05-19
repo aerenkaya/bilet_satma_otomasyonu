@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lbl_kombine = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +64,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(522, 520);
+            this.button1.Location = new System.Drawing.Point(753, 595);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(253, 77);
             this.button1.TabIndex = 2;
@@ -73,20 +74,21 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(522, 603);
+            this.button2.Location = new System.Drawing.Point(1026, 595);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(253, 77);
             this.button2.TabIndex = 3;
             this.button2.Text = "ödemeyi onayla";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(888, 532);
+            this.label2.Location = new System.Drawing.Point(989, 542);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 32);
             this.label2.TabIndex = 4;
@@ -143,16 +145,29 @@
             this.lbl_kombine.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_kombine.Location = new System.Drawing.Point(164, 520);
             this.lbl_kombine.Name = "lbl_kombine";
-            this.lbl_kombine.Size = new System.Drawing.Size(347, 29);
+            this.lbl_kombine.Size = new System.Drawing.Size(369, 29);
             this.lbl_kombine.TabIndex = 6;
-            this.lbl_kombine.Text = "kaç maçlık kombine alacaksınız";
+            this.lbl_kombine.Text = "Kaç Maçlık Kombine Alacaksınız?";
             this.lbl_kombine.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Variable Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(954, 505);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(143, 27);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Toplam Tutar:";
             // 
             // bilet_kes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::projemmmmmmmmmmm.Properties.Resources.Siyah_ve_Beyaz__Profesyonel_ve_Havalı__Sanatsal_Masaüstü_Duvar_Kağıdı__2_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1432, 706);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lbl_kombine);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
@@ -178,5 +193,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lbl_kombine;
+        private System.Windows.Forms.Label label3;
     }
 }
