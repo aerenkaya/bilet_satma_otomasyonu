@@ -37,7 +37,7 @@
             this.labelGelir.BackColor = System.Drawing.Color.Transparent;
             this.labelGelir.Font = new System.Drawing.Font("Segoe UI Variable Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.labelGelir.ForeColor = System.Drawing.Color.White;
-            this.labelGelir.Location = new System.Drawing.Point(281, 107);
+            this.labelGelir.Location = new System.Drawing.Point(259, 211);
             this.labelGelir.Name = "labelGelir";
             this.labelGelir.Size = new System.Drawing.Size(92, 37);
             this.labelGelir.TabIndex = 0;

@@ -23,7 +23,7 @@ namespace projemmmmmmmmmmm {
         public MySqlConnection conn = new MySqlConnection("Server=localhost;Database=bilet_ke;Uid=root;Pwd=12345");
         public static class GlobalDatabase
         {
-            // Global olarak erişilebilen veritabanı bileşenleri
+
             public static MySqlConnection Conn { get; set; }
             public static int KullaniciID { get; set; }
             public static string KullaniciAdi { get; set; }
@@ -53,7 +53,6 @@ namespace projemmmmmmmmmmm {
 
                         if (reader.Read())
                         {
-                            // Kullanıcı bulundu, bilgileri static sınıfa kaydet
                             GlobalDatabase.KullaniciID = reader.GetInt32("id");
                             GlobalDatabase.KullaniciAdi = reader.GetString("kullanıcı_adi");
                             GlobalDatabase.Isim = reader.GetString("isim");
@@ -98,7 +97,6 @@ namespace projemmmmmmmmmmm {
 
                         if (reader.Read())
                         {
-                            // Kullanıcı bulundu, bilgileri static sınıfa kaydet
                             GlobalDatabase.KullaniciID = reader.GetInt32("id");
                             GlobalDatabase.KullaniciAdi = reader.GetString("kullanıcı_adi");
                             GlobalDatabase.Isim = reader.GetString("isim");
@@ -146,6 +144,11 @@ namespace projemmmmmmmmmmm {
                    "Çalışma Saatleri: 09:00 - 19:00\n"+
                    "Instagram hesabımız: horozbilet";
            MessageBox.Show(mesaj, "Bize Ulaşın", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -62,5 +62,11 @@ namespace projemmmmmmmmmmm
         {
            
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Form1 anaekran = new Form1();
+            anaekran.Show();
+        }
     }
 }
