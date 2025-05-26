@@ -36,6 +36,7 @@
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.girisekrandon = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -112,6 +113,17 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // girisekrandon
+            // 
+            this.girisekrandon.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.girisekrandon.Location = new System.Drawing.Point(617, 401);
+            this.girisekrandon.Name = "girisekrandon";
+            this.girisekrandon.Size = new System.Drawing.Size(171, 37);
+            this.girisekrandon.TabIndex = 10;
+            this.girisekrandon.Text = "Giriş Ekranına Dön";
+            this.girisekrandon.UseVisualStyleBackColor = true;
+            this.girisekrandon.Click += new System.EventHandler(this.button4_Click_2);
+            // 
             // islemmenusu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -119,6 +131,7 @@
             this.BackgroundImage = global::projemmmmmmmmmmm.Properties.Resources.Siyah_ve_Beyaz__Profesyonel_ve_Havalı__Sanatsal_Masaüstü_Duvar_Kağıdı__2_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.girisekrandon);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button3);
@@ -141,5 +154,6 @@
         private System.Windows.Forms.ImageList ımageList1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button girisekrandon;
     }
 }

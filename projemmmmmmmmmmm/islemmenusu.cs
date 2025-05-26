@@ -68,5 +68,12 @@ namespace projemmmmmmmmmmm
             Form1 anaekran = new Form1();
             anaekran.Show();
         }
+
+        private void button4_Click_2(object sender, EventArgs e)
+        {
+            Form1 girisekran = new Form1();
+            girisekran.Show();
+            this.Close();
+        }
     }
 }
